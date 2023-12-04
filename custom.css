@@ -1,0 +1,306 @@
+/*
+  Ryan Laches
+    WEB-125: Mobile Web Design
+    Final Project
+    Instructor: D'Agata
+    11/30/2023
+*/
+
+
+/* Font Imports (local) */
+@font-face {
+    font-family: Titillium;
+    src: url(fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+    font-family: Titillium-bold;
+    src: url(fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+    font-family: Titillium-italic;
+    src: url(fonts/Titillium_Web/TitilliumWeb-Italic.ttf);
+}
+@font-face {
+    font-family: Smooch;
+    src: url(fonts/Smooch/Smooch-Regular.ttf);
+}
+
+body {
+    font-family: "Titillium"!important;
+}
+footer {
+    margin-top: 5%;
+    margin-bottom: -5%;
+    background-color:#212529;
+    color: #f8f9fa;
+}
+footer a {
+    color:#6c757d;
+    transition: all 0.25s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #ced4da;
+    transform: scale(1.5);
+}
+
+footer p {
+    padding-top: 1rem;
+    color: #ced4da;
+    text-align: center;
+}
+.footer-icons {
+    text-align: center;
+    padding-top: 1em;
+}
+.footer-icons a {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navigation {
+    width:100%;
+}
+#body-container {
+    background-image: url(images/forest-background.jpg);
+}
+#main-container {
+    width: 75%;
+    margin-left: 12.5%;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 50px;
+    box-shadow: 4px 8px 12px rgb(0, 0, 0);
+}
+#bannerImage {
+    width: 75%;
+    border-radius: 2rem;
+    box-shadow:  2px 4px 8px rgb(0, 0, 0);
+}
+.banner h1{
+    font-family: "Titillium-bold";
+    padding: 2rem;
+    font-size: 8rem;
+    text-shadow: 2px 2px 1px white; 
+}
+.banner h2{
+    font-family: "Smooch";
+    padding: 1rem;
+}
+.banner {
+    border-bottom: 4px dotted black;
+    padding-bottom: 4rem;
+}
+.navbar-nav {
+    text-align: left;
+    margin-right: 12.5%;
+}
+ .nav-item {
+    padding: 0 2.5em 0 2.5em;
+}
+
+
+
+/* 'mobile-first' (responsive design) */
+@media screen and (max-width: 370px){
+    .banner h1 {
+        display: none;
+    }
+}
+@media screen and (max-width: 420px){
+    .banner h1 {
+        font-size: 48px;
+    }
+    .fa {
+        margin-left: 7.5%;
+        margin-right: 12.5%;
+    }
+}
+@media screen and (max-width: 700px){
+    .banner h1 {
+        font-size: 4rem;
+    }
+    .banner h2 {
+        font-size: 2rem;
+    }
+    #p-home2 {
+        width: 125%;
+        padding-right: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .fa {
+        margin-left: 12.5%;
+        margin-right: 25%;
+    }
+}
+@media screen and (max-width: 1300px ){
+    p {
+        font-size: 12px!important;
+    }
+    #img-home1 {
+        width: 50%;
+    }
+    #p-home1 {
+        padding-right: 1.5rem;
+    }
+    #img-home2 {
+        width: 30%;
+    }
+    #img-home3 {
+        width: 40%!important;
+    }
+    #p-home2 {
+        padding-right: 1.5rem;  
+    }
+    #p-home3 {
+        padding-right: 1.5rem;
+        width: 150%;
+    }
+    .fa {
+        margin-left: 5%;
+    }
+    .about-content {
+        margin-top: 1.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .about-content-bottom {
+        margin-left: 5%;
+    }
+}
+
+
+
+/* general styling */
+p {
+    font-size: 1.25rem;
+}
+.section-home h2 {
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: 5%;
+    font-size: 48px;
+    font-style: bold;
+    font-weight:bolder;
+}
+.section-home p {
+    padding-left: 1rem;
+    margin-bottom: 10%;
+}
+.section-home h3 {
+    padding-left: 1rem;
+    font-style: bold;
+    font-weight:bolder;
+}
+.section-home ul {
+    font-size: 1.5em;
+    margin-left: 10%;
+}
+#section-1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#p-border {
+    border-top: 1px dotted black;
+    overflow: hidden;
+}
+#section-2 {
+    margin-top: -1%;
+    width: 60%;
+    border-top: 1px dotted black;
+    margin-left: 25%;
+}
+#section-2 h3 {
+    margin-left:5%;
+}
+#section-3 {
+    margin-left: 5%;
+    width: 60%;
+    border-top: 1px dotted black;
+}
+#img-home1 {
+    float: right!important;
+    border-radius: 1rem;
+    margin-right: 5%;
+    margin-left:  5%;
+}
+#img-home1-forest {
+    float: right!important;
+    border-radius: 1rem;
+    margin-right: 5%;
+    margin-left:  5%;
+    width: 25%;
+    border: 4px outset skyblue;
+}
+#img-home2 {
+    float:left;
+    border: 4px outset rgba(0, 128, 0, 0.53);
+    border-radius: 1rem;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+#img-home2-wolf {
+    float:left;
+    border: 4px outset rgba(128, 0, 0, 0.53);
+    border-radius: 1rem;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 25%;
+}
+#img-home2-public-safety {
+    display: block;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    border: 4px outset rgba(128, 90, 0, 0.53);
+    border-radius: 1rem;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 25%;
+}
+
+#img-home3 {
+    float: right;
+    border-radius: 1rem;
+    margin-top: 2%;
+    margin-right: 2.5%;
+    margin-left: 1%;
+    width: auto;
+}
+.section-home h3 {
+    margin-top: 5%;
+}
+#p-home1 {
+    font-size: 1.25rem;
+}
+#p-home2{
+    font-size: 1.25rem;
+}
+#p-home3 {
+    font-size: 1.25rem;
+    padding-right: 2rem;
+}
+#sec2-cont {
+    margin-left: 5%;
+}
+
+
+
+#links li {
+    list-style-type: none;
+}
+
+#links li a {
+    color: black;
+    text-decoration: none;
+    transition: ease-in-out 0.25s;
+}
+
+#links li a:hover {
+    color: rgb(255, 0, 0);   
+    transform: scale(105%);
+}
+
+#links li:visited {
+    color: rgb(255, 255, 255);
+}
